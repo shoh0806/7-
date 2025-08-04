@@ -1,0 +1,68 @@
+.no-line{
+    text-decoration: none;
+}
+
+.btn-outline-success{
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    right: 3.1rem;
+}
+
+.btn-outline-success:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+
+.custom-carousel-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.custom-arrow {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  opacity: 1; /* 기본 Bootstrap은 hover 전에는 0.5일 수 있음 */
+}
+
+h5{
+    font-weight: 700;
+}
+
+h7{
+    color: gray;
+}
+
+del{
+    color: gray;
+}
+
+
+.percent{
+    font-weight: 700;
+    color: red;
+    font-size: larger;
+}
+
+.price{
+    color: black;
+    font-weight: 600;
+}
