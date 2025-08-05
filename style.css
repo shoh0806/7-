@@ -1,6 +1,21 @@
 .no-line{
     text-decoration: none;
 }
+/* 로그인/회원가입 바 고정 */
+.navbar-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1040;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-category {
+  position: static;
+}
+
+
 
 .btn-outline-success{
     color: black;
@@ -44,25 +59,93 @@
 }
 
 h5{
+    font-size: 15px;
     font-weight: 700;
 }
 
-h7{
+.sub-title{
     color: gray;
+    font-size: 13px;
 }
 
 del{
     color: gray;
+    font-size: 13px;
 }
 
 
 .percent{
     font-weight: 700;
     color: red;
-    font-size: larger;
+    font-size: 17.25px
 }
 
 .price{
     color: black;
     font-weight: 600;
+    font-size: 15px;
+}
+.zzzzz{
+    border: 1px solid red;
+}
+
+.card-text{
+    min-height: 100px;
+}
+
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease; /* 부드럽게 줌인 */
+  max-height: 260px;
+}
+
+
+.card-img-top:hover {
+  transform: scale(1.2);
+  
+}
+
+.card-body{
+    min-height: 200px;
+}
+
+.rating {
+  font-size: 20px;
+  color: gold;
+}
+
+
+.second-image{
+    width: auto;
+    height: auto;
+}
+
+footer{
+    border-top: 1px solid #8d8d8f;
+}
+
+.review-button{
+    margin-bottom: 10rem;
+}
+
+.Copyright-border{
+    border-top: 1px solid #8d8d8f;
+    
+}
+
+.Copyright{
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.footer-icon1:hover{
+    color: rgb(110, 24, 110);
+}
+
+.footer-icon2:hover{
+    color: rgb(135, 217, 52);
 }
