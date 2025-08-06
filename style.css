@@ -1,11 +1,46 @@
-.no-line{
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container,
+.row,
+.col {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.no-line {
+  text-decoration: none;
 }
 /* 로그인/회원가입 바 고정 */
 .navbar-top {
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100%;
   z-index: 1040;
   background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -15,21 +50,23 @@
   position: static;
 }
 
+.btn-outline-success {
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  right: 0;
+}
 
-
-.btn-outline-success{
-    color: black;
-    border: 1px solid black;
-    position: relative;
+@media (min-width: 768px) {
+  .btn-outline-success {
     right: 3.1rem;
+  }
 }
 
-.btn-outline-success:hover{
-    background-color: black;
-    border: 1px solid black;
+.btn-outline-success:hover {
+  background-color: black;
+  border: 1px solid black;
 }
-
-
 
 .custom-carousel-btn:hover {
   background-color: #f1f1f1;
@@ -43,6 +80,8 @@
 
 .custom-carousel-btn {
   position: absolute;
+  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   background-color: white;
@@ -58,41 +97,45 @@
   opacity: 1; /* 기본 Bootstrap은 hover 전에는 0.5일 수 있음 */
 }
 
-h5{
-    font-size: 15px;
-    font-weight: 700;
+@media (max-width: 768px) {
+  .custom-carousel-btn {
+    display: none;
+  }
 }
 
-.sub-title{
-    color: gray;
-    font-size: 13px;
+h5 {
+  font-size: 15px;
+  font-weight: 700;
 }
 
-del{
-    color: gray;
-    font-size: 13px;
+.sub-title {
+  color: gray;
+  font-size: 13px;
 }
 
-
-.percent{
-    font-weight: 700;
-    color: red;
-    font-size: 17.25px
+del {
+  color: gray;
+  font-size: 13px;
 }
 
-.price{
-    color: black;
-    font-weight: 600;
-    font-size: 15px;
-}
-.zzzzz{
-    border: 1px solid red;
+.percent {
+  font-weight: 700;
+  color: red;
+  font-size: 17.25px;
 }
 
-.card-text{
-    min-height: 100px;
+.price {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.zzzzz {
+  border: 1px solid red;
 }
 
+.card-text {
+  min-height: 100px;
+}
 
 .card {
   overflow: hidden;
@@ -103,14 +146,12 @@ del{
   max-height: 260px;
 }
 
-
 .card-img-top:hover {
   transform: scale(1.2);
-  
 }
 
-.card-body{
-    min-height: 200px;
+.card-body {
+  min-height: 200px;
 }
 
 .rating {
@@ -118,34 +159,32 @@ del{
   color: gold;
 }
 
-
-.second-image{
-    width: auto;
-    height: auto;
+.second-image {
+  width: auto;
+  height: auto;
 }
 
-footer{
-    border-top: 1px solid #8d8d8f;
+footer {
+  border-top: 1px solid #8d8d8f;
 }
 
-.review-button{
-    margin-bottom: 10rem;
+.review-button {
+  margin-bottom: 10rem;
 }
 
-.Copyright-border{
-    border-top: 1px solid #8d8d8f;
-    
+.Copyright-border {
+  border-top: 1px solid #8d8d8f;
 }
 
-.Copyright{
-    margin-top: 4rem;
-    margin-left: 4rem;
+.Copyright {
+  margin-top: 4rem;
+  margin-left: 4rem;
 }
 
-.footer-icon1:hover{
-    color: rgb(110, 24, 110);
+.footer-icon1:hover {
+  color: rgb(110, 24, 110);
 }
 
-.footer-icon2:hover{
-    color: rgb(135, 217, 52);
+.footer-icon2:hover {
+  color: rgb(135, 217, 52);
 }
